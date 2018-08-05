@@ -1,0 +1,54 @@
+/*CodeHim Menu Effects
+*  Copyright 2019 (c) CodeHim
+*  Author: Asif Mughal
+*  URL: www.codehim.com
+*/ 
+/* Glass Effect*/
+
+
+/*Text Shadow*/
+.text-shade{
+-webkit-text-shadow: 1px 0px 0 rgba(0, 0, 0, .5);
+  text-shadow:1px 0px 0 rgba(0, 0, 0, .5);
+}
+
+/* Open Me alert Animation*/
+@keyframes openMe {
+    0%   {left:-10px;}
+    45%  {left: -10px;}
+    46% {left:-10px;}
+    47% {left: -10px;}
+   48%  {left: -2px;}
+ 49% {left: -5px;}
+ 50% {left: -8px; background: #e41b17;}
+ 51% {left: -3px;}
+ 52% {left: -7px;}
+ 53% {left: -4px;}
+54% {left: -10px;}
+100% {left: -10px;}
+}
+
+/* Touch Effect*/
+@-webkit-keyframes ripple-effect{
+100%{
+opacity:0;
+-webkit-transform:scale(2.5);
+transform:scale(2.5)
+}
+}
+@keyframes ripple-effect{
+100%{
+opacity:0;
+-webkit-transform:scale(2.5);
+transform:scale(2.5)
+}
+}
+.glossy{
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.8), 0 1px 2px rgba(0, 0, 0, 0.2);
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+
+}
