@@ -1,0 +1,187 @@
+/*CSS For Demo*/
+body{ font-family: fontawesome; 
+   background: #f5f5f5; }
+.card{
+   background: #fff;
+   padding: 15px;
+    margin: 20px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    box-shadow: 2px 1px 6px rgba(0, 0, 0, .3);
+}
+
+.card h2 {
+   font-size: 15pt;
+   font-weight: 400;
+   border-bottom: 2px solid #ddd;
+   padding: 10px;
+   margin-bottom: 5px;
+   
+}
+
+input[type="radio"]{
+  display: none;
+}
+.color-plate{
+   display: inline-block;
+   margin: 3px;
+   border: 1px solid #ddd;
+   background: #ddd;
+   color: #000;
+   cursor: pointer;
+   transition: .2s;
+-webkit-transition: .2s;
+-moz-transition: .2s;
+   outline: 0;
+   
+}
+
+.color-plate:hover{
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, .5);
+}
+.color-plate span {
+   width: 35px;
+    height: 35px;
+    display: inline-block;
+     margin: -1px;
+}
+.color-plate p{
+   text-align: center;
+    font-size: 10px;
+     padding: 2px;
+}
+
+.red { background-color: #e41b17;
+    }
+
+.dark-gray{background-color: #666;}
+
+.gray{ background-color: #888;}
+
+.orange{background-color: #F88017;}
+
+.blue{ background-color: #1589FF;}
+.dark-blue{background-color: #2554C7}
+
+.pink{background-color: #F535AA;}
+
+.green{ background-color: #3EA055;}
+.dark-green{ background-color: #254117;}
+.red,
+.dark-gray,
+.pink,
+.gray,
+.green,
+.dark-green,
+.blue,
+.dark-blue, .orange {
+box-shadow: inset 0px 3px 3px rgba(255, 255, 255, 0.5);
+}
+
+.codehim_menu_code { width: 100%;
+   height: 300px;
+   padding: 10px;
+   resize: none;
+   box-sizing: border-box;
+   border: 2px solid #bbb;
+   color: #444;
+   font-size: 13px;
+   white-space: pre;
+   background: #fff;
+   border-radius: 4px;
+   margin: 15px 0  10px 0 ;
+    outline:0; }
+
+.card ul li{
+   padding: 10px;
+   list-style: none;
+}
+.card ul {
+   margin-top: 15px;
+}
+
+/* Toggle Options*/
+.card .option{
+   display: block;
+   background: rgba(0, 0, 0, .2);
+   color: rgba(0, 0, 0, .8);
+   font-size: 15px;
+   border-bottom: 1px solid rgba(0, 0, 0, .1);
+   padding: 15px;
+   cursor: pointer;
+   
+}
+.set-glossy:before,
+.set-shade:before,
+.set-static:before,
+.set-top:before{
+   content: "\f204";
+   font-family: FontAwesome;
+   color: #999;
+   font-size: 20pt;
+   float: right;
+}
+
+.active:before{
+  content: "\f205";
+   font-family: FontAwesome;
+   color: #16a085;
+   font-size: 20pt;
+   float: right;
+}
+.selected{
+   text-align: center;
+}
+
+input[type="radio"]:checked + label  p:before{
+   content: "\f00c";
+   font-family: FontAwesome;
+   color: #fff;
+   font-size: 8pt;
+   float: right;
+   
+}
+input[type="radio"]:checked + label .color-plate{
+   background: #000;
+   color: #fff;
+   border: 1px solid #000;
+
+}
+.card h1 {
+   font-size: 16pt;
+   text-align: center;
+   line-height: 1.2;
+   color: #16a085; 
+}
+.card h1 ~ p{
+    font-size: 16px;
+}
+.codehim-copy-btn{
+   padding: 12px;
+   color: rgba(255, 255, 255, 0.8);
+   border: 0;
+   outline:0;
+   background: #16a085; 
+   border-radius: 3px;
+   font-size: 15px;
+transition: .4s;
+   cursor: pointer;
+   
+}
+.codehim-copy-btn:hover{
+   background: #666;
+    }
+@media only screen and (min-width: 480px){
+   
+   .resp{ display: block;
+      width: 50%;
+       float: left; 
+      box-sizing: border-box;
+   
+  }
+.card{ min-height: 200px; }
+.res{ overflow: hidden; box-sizing: border-box; }
+ 
+
+}
+
