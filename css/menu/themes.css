@@ -1,0 +1,96 @@
+/*CodeHim Menu Themes
+*  Copyright 2019 (c) CodeHim
+*  Author: Asif Mughal
+*  URL: www.codehim.com
+*/ 
+
+/* Cute Theme*/
+.cute-theme {
+    background-color: #666;
+}
+
+.cute-theme a{
+   color: #333;
+}
+.cute-theme .dropdown li a:hover {
+   background: #FF2400;  
+   color: #fff;
+   text-indent: 10px;
+   transition: .3s;
+}
+.codehim-more > li > a:hover,
+.cute-theme > li > a:hover {
+  background: #C11B17 !important;
+  color: #fff; 
+}
+.cute-theme > li.active > a, 
+.cute-theme > li > a:active, 
+.cute-theme > .dropdown:hover > a {
+background: #C11B17 !important;
+ color: #fff;
+}
+@media only screen and (min-width: 800px){
+   .codehim-menu{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+
+  .dropdown ul {
+     text-align: left; }
+/* Fixed Top on Pc and Tabs*/
+.fixed-top{
+   position: fixed;
+   top:0;
+   width: 100%;
+}
+/* Fixed Bottom on Pc and Tabs*/
+.fixed-bottom{
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+}
+
+}
+
+ /* Dark Theme*/
+.dark-theme {
+    background-color: #595959;
+}
+.dark-theme .dropdown li a:hover {
+   background-color: #595959;  
+}
+
+/* Orange Theme*/
+.orange-theme{
+  background-color: #FF7F50;
+}
+.orange-theme .dropdown li a:hover {
+   background-color: #FF7F50;  
+}
+
+ 
+
+/* Blue Theme*/
+.blue-theme{
+  background-color: #488AC7
+}
+.blue-theme .dropdown li a:hover {
+   background-color: #488AC7  
+}
+
+/* Pink Theme */
+.pink-theme{
+  background-color: #F52887
+}
+.pink-theme .dropdown li a:hover {
+   background-color: #F52887  
+}
+
+.glossy .dropdown li a:hover,
+.glossy li a:hover {
+-webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.8), 0 1px 2px rgba(0, 0, 0, 0.2);
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));}
