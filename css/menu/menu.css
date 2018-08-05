@@ -1,0 +1,415 @@
+/*CodeHim Navigation Menu 
+*  Copyright 2019 (c) CodeHim
+*  Author: Asif Mughal
+*  URL: www.codehim.com
+*/ 
+* { margin: 0; padding: 0;}
+ .codehim-menu{
+    font-family: FontAwesome;
+    font-weight: 400;
+    font-size: 16px;
+   background: #438D80;
+   padding: 10px;
+   transition: .3s;
+}
+.codehim-menu a{
+    text-decoration: none;
+    display: inline;
+    
+}
+ul.codehim-menu{
+   list-style: none;
+}
+.codehim-more > li,
+.codehim-menu > li {
+  display: inline;
+  margin: 0;
+   
+} 
+.codehim-more > li > a,
+.codehim-menu > li > a {
+  height: 35px;
+  line-height: 35px;
+  padding: 18px;
+  color: rgba(255, 255, 255, .8);
+  text-decoration: none;
+  outline: 0;
+  
+}
+.codehim-more > li > a:hover,
+.codehim-menu > li > a:hover {
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+.codehim-menu > li.active > a, 
+.codehim-menu > li > a:active, 
+.codehim-menu > .dropdown:hover > a {
+  background: rgba(0, 0, 0, 0.2);
+ 
+  
+}
+
+.dropdown {
+  position: relative;
+  
+}
+.dropdown:hover ul {
+  z-index: 998;
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+   box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+}
+.dropdown ul {
+  height: 0;
+  min-height: 0;
+  position: absolute;
+  top: 36px;
+   left: -1px;
+  overflow: hidden;
+  display: block;
+  border-top: 0;
+ background: #fff;
+    min-width: 160px;
+    z-index: -1;
+}
+
+.has-one-item:hover ul {min-height: 40px}
+.has-two-item:hover ul {min-height: 80px}
+.has-three-item:hover ul {min-height: 120px}
+.has-four-item:hover ul {min-height: 160px}
+.has-five-item:hover ul {min-height: 200px}
+.has-six-item:hover ul {min-height: 240px}
+.has-seven-item:hover ul {min-height: 280px}
+.has-eight-item:hover ul {min-height: 320px}
+.has-nine-item:hover ul {min-height: 360px}
+.has-ten-item:hover ul {min-height: 400px}
+.has-infinte-item:hover ul{ min-height: 500px; overflow: auto;}
+
+.dropdown ul.large {
+  min-width: 200px;
+}
+.codehim-menu-trigger,
+.trigger,
+.codehim-menu .more-item{
+  display: none;
+}
+.dropdown li {
+  display: block;
+  margin: 0 18px;
+  overflow: visible;
+}
+.dropdown li + li {
+  border-top: 1px dotted #eee;
+}
+.dropdown li a {
+  color: #555;
+  padding: 8px 18px;
+  margin: 0 -18px;
+  display: block;
+}
+.dropdown li a:hover {
+  color: #fff;
+   background: #438D80;
+   
+}
+.arrow{
+   display: inline-block;
+   width: 4px;
+   height: 4px;
+   margin-left: 6px;
+   margin-bottom: 2px;
+   border-right: 2px solid rgba(255, 255, 255, .8);
+   border-bottom: 2px solid rgba(255, 255, 255, .8);
+   transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+}
+
+.dropdown:hover .arrow{
+   transform: rotate(222.5deg);
+   transition: .5s;
+   -webkit-transform: rotate(222.5deg);
+   -webkit-transition: .5s;
+   -moz-transform: rotate(222.5deg);
+   -moz-transition: .5s;
+  
+
+}
+.icon {font-size: 20pt;
+position: relative;
+   
+}
+
+
+
+@media only screen and (min-width: 220px) and (max-width: 540px) {
+.codehim-menu {
+  border-right: 2px solid #666; 
+  
+}
+  .codehim-menu{ 
+     padding: 0;
+    width: 230px;
+    height: 100vh;
+   position: fixed;
+    top: 0;
+     left: -232px;
+    transition: .6s;
+-webkit-transition: .6s;
+-moz-transition: .6s;
+}
+
+
+
+.codehim-more > li ,
+.codehim-menu > li {
+  display: block;
+  margin: 0;
+   border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+}
+
+.codehim-more > li a,
+.codehim-menu > li a{
+  display: block;
+   
+}
+
+.dropdown ul {
+  height: 0;
+  min-height: 0;
+  position: relative;
+  top: 0;
+   left: 0;
+  overflow: hidden;
+  display: block;
+  
+  border-top: 0;
+ background: #fff;
+    min-width: 100%;
+    z-index: 997;
+   
+}
+
+.dropdown ul {
+  min-height: 0px;
+  transition: .6s;
+-webkit-transition: .6s;
+-moz-transition: .6s;
+   box-shadow: 0 0 0;
+   
+   margin: 0;  
+   
+}
+.dropdown:hover ul {
+   box-shadow: none;
+   margin:0;
+
+}
+.dropdown li {
+margin-right: 5px;
+
+}
+.dropdown li a {
+  color: #555;
+  padding: 10px 18px;
+  display: block; 
+
+}
+.arrow{
+    float: right;
+    margin: 16px 10px 5px 5px;
+    
+}
+
+.codehim-menu-trigger{
+   position: fixed;
+   left: -15px;
+   top: 20%;
+    width: 15px;
+     padding-left: 10px;
+    height: 40px;
+   line-height: 40px;
+   background: rgba(0, 0, 0, .3);
+   padding: 10px;
+   color: #fff;
+   border-radius: 0 6px 6px 0;
+   font-size: 18pt;
+   z-index: 500;
+   display: inline-block;
+animation-name: openMe;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+
+
+.codehim-menu-trigger:before{
+ content: "\f105";
+  font-family: FontAwesome;
+  margin-left: 10px;
+}
+
+
+.codehim-menu-trigger:hover{
+background: #666;
+  transition: .6s;
+  animation-duration: 0s;
+  animation-iteration-count: 0;
+}
+
+.trigger:checked + label .codehim-menu-trigger {
+   left: 224px;
+   top: 20%;
+   transition: .6s;
+   background: #666;
+   z-index: 0;
+   animation-duration: 0s;
+  animation-iteration-count: 0;
+}
+.trigger:checked + label .codehim-menu-trigger:before{
+ content: "\f104";
+  font-family: FontAwesome;
+transition: .6s;
+}
+.trigger:checked ~ nav > .codehim-menu {
+   left:0;
+   transition: .6s;
+}
+
+.nav-bar {
+   background: #000;
+   width: 100%;
+   position: relative;
+   top: 0;
+   cursor: pointer;
+   display: inline-block;
+}
+.nav-bar:before{
+  content: "\f0c9";
+   font-family: FontAwesome;
+   font-size: 18pt;
+   position: relative; 
+   left: 20px;
+   
+}
+
+}
+
+/* Positions For Desktop and Tabs */
+@media only screen and (min-width: 541px){
+
+/* Fixed Top on Pc and Tabs*/
+.fixed-top{
+   position: fixed;
+   top:0;
+   width: 100%;
+}
+/* Static Position*/
+.static{
+   position: static;
+   top:0;
+   width: 100%;
+}
+
+}
+
+/*Design For Tabs */
+@media only screen and (min-width: 541px) and (max-width: 720px){
+   .codehim-more{ 
+         display: none;  
+         height: 0;
+        min-height: 0;
+       top: 55px;
+       right: 50px;
+      overflow: hidden;
+      display: block;
+      border-top: 0;
+      background: #fff;
+      z-index: 997;
+    position: absolute;
+    width: 0;
+}
+
+  .codehim-menu .more-item{
+    display: inline-block;
+    
+    float: right;
+    margin-right: 40px;
+    user-select: none;
+   -webkit-user-select: none;
+    
+   
+}
+  .more-item span:before {
+    content: "\f142";
+    font-family: FontAwesome;
+    font-size: 17pt;
+    font-weight: 400;
+  height: 35px;
+  line-height: 35px;
+  padding: 18px;
+  color: rgba(255, 255, 255, .8);
+  text-decoration: none;
+  outline: 0;
+
+  
+}
+.touch{
+   position: absolute;
+   margin-top: -36px;
+   width: 36px;
+   height: 36px;
+   line-height: 36px;
+   border: 0;
+   margin-left: 8px;
+   
+}
+
+.trigger:checked ~ nav > .codehim-menu > li[class*="more-item"] .touch{
+background:#fff;
+border-radius:100%;
+display:block;
+opacity:.8;
+position:absolute;
+-webkit-animation:ripple-effect .4s linear;
+animation:ripple-effect .4s linear
+
+-webkit-transform:scale(0);
+-ms-transform:scale(0);
+transform:scale(0)
+
+}
+
+
+.trigger:checked ~ nav > .codehim-menu > li[class*="more-item"] span:before {
+    content: "\f141";
+
+}
+
+   .trigger:checked ~ nav > .codehim-menu > .more-item ~ span[class*="codehim-more"] {
+      display: block;
+  z-index: 998;
+  min-height: 153px;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+   box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+ width: 160px;
+   }
+.trigger:checked ~ nav > .codehim-menu > .more-item ~ span[class*="codehim-more"] li a{
+      color: #555;
+  padding: 8px 18px;
+  margin: 0 -18px;
+  display: block;  
+   }
+.trigger:checked ~ nav > .codehim-menu > .more-item ~ span[class*="codehim-more"] li a:hover{ background: #ddd !important;}
+
+.trigger:checked ~ nav > .codehim-menu > .more-item ~ span[class*="codehim-more"] li{
+      display: block;
+  margin: 0 18px;
+  overflow: visible;
+   }
+
+}
+
